@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            
+             xmlns:Controls="clr-namespace:MyFirstApp.customrenderer" 
+             mc:Ignorable="d"
+             BackgroundColor="White"
+             x:Class="MyFirstApp.Views.Login">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Margin="1">
+        <Frame BackgroundColor="Black" CornerRadius="5" Opacity=".75"  >
+            
+                <StackLayout >
+
+                <Label TextColor="White"  FontSize="30" HorizontalTextAlignment="Center" >Welcome to Login Form</Label>
+                    <Frame Margin="0" Padding="0" BackgroundColor="Gray" CornerRadius="10">
+                        <!--<local:BorderlessEntry x:Name="txtUsename" Placeholder="Enter Username" PlaceholderColor="White"></local:BorderlessEntry>-->
+                        <Controls:BorderlessEntry x:Name="txtUsename" Placeholder="Enter Username" PlaceholderColor="Wheat" TextColor="White"></Controls:BorderlessEntry>
+                    </Frame>
+
+                    <Frame Margin="0" Padding="0" BackgroundColor="Gray" CornerRadius="10">
+                        <Controls:BorderlessEntry x:Name="txtid" Placeholder="Enter ID" PlaceholderColor="Wheat" TextColor="White"></Controls:BorderlessEntry>
+                    </Frame>
+                    <Frame Margin="0" Padding="0" BackgroundColor="Gray" CornerRadius="10">
+                        <Controls:BorderlessEntry x:Name="txtphone" Placeholder="Enter Phone" PlaceholderColor="Wheat" TextColor="White"></Controls:BorderlessEntry>
+                    </Frame>
+                    <Frame Margin="0" Padding="0" BackgroundColor="Gray" CornerRadius="10">
+                        <Controls:BorderlessEntry x:Name="txtadd" Placeholder="Enter Address" PlaceholderColor="Wheat" TextColor="White"></Controls:BorderlessEntry>
+                    </Frame>
+                    
+                    <Button BackgroundColor="CornflowerBlue" TextColor="White" Clicked="Button_Clicked" Text="Submit"></Button>
+            </StackLayout>
+            
+
+        </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
